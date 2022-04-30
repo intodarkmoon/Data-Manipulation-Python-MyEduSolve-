@@ -8,30 +8,11 @@
 
 # Data Manipulation with Python
 
-Data Preparation is the process of gathering, combining, structuring, and organizing data so it can be used in business intelligence (BI), analytics, and data visualization applications. The components of data preparation include data preprocessing, profiling, cleansing, validation, and transformation.
+Real-world data is messy. That’s why libraries like pandas are so valuable. Using pandas you can take the pain out of data manipulation by extracting, filtering, and transforming data in DataFrames, clearing a path for quick and reliable data analysis. If you want to improve your data wrangling skills this is the track for you. You’ll learn how to prepare real-world data for analysis and grow your expertise as you work with multiple DataFrames using pandas. You’ll also gain hands-on experience of how to combine, merge, and create visualizations. At the end of the track, you'll apply your new-found data manipulation skills to analyze the impact of weather and gender on police behavior. Start this track and discover how pandas can save you time manipulating data.
 
-1. ### Data Cleansing
-Data Cleansing is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset.. 
-
-Before we carry out the data cleansing process, there are several things that must be considered, including:
-- Import the required libraries 
-    - **pandas**, for data manipulation and analysis
-    - **NumPy**, used for working with arrays
-    - **matplotlib** and **seaborn** for visualization
-
-2.	### Exploratory Data Analysis 
-Exploratory Data Analysis (EDA) is used by data scientists to analyze and investigate data sets and summarize their main characteristics, often employing data visualization methods.
-
-Before we carry out the data cleansing process, there are 2 libraries that must be imported, including:
-- pandas, for data manipulation and analysis.
-- Seaborn, for determining the relationship between two variables
-
-Types of Exploratory Data Analysis.
-- **Univariate-Non-Graphic Analysis**, is the simplest form of data analysis, in which the analyzed data consists of only one variable so that it does not deal with causes or relationships. The main purpose of the univariate analysis is to describe the data and find patterns in it.
-- **Univariate-Graphic analysis**, this method is needed because non-graphical methods cannot provide a complete picture of the data. Examples of graphs that are often used are steam and leaf, histogram, boxplot, etc.
-- **Multivariate-Non-Graphic Analysis** is a form of analysis that uses two or more variables, so Exploratory Data Analysis is used to show the relationship between these variables.
-- **Multivariate-Graphic Analysis**, using graphs to show the relationship between variables. Examples of graphs that can be used scatter plots, run charts, heat maps, bubble charts, etc.
-
-
-
-
+### Pandas has two object, i.e. **Series** and **DataFrame**. 
+1. **Series** is a one-dimensional labeled data structure. It's like a column but with no name. The axis labels are collectively called index.
+2. **Implicit Index** is the default index. But we can define a different index, it’s called **Explicit Index** i.e.  the defined index. Defining an index, the number of indexes must be equal to the number of data. Although we have defined an Explicit Index, we can still call data by using its Implicit Index.
+If there is the same implicit index and explicit index, it will depend only on the explicit index when it’s being called. If the specified index doesn’t exist (in explicit index), it will return ‘KeyError’ exception.
+If there is the same implicit index and explicit index, there will be inconsistency. And to overcome it, use loc and iloc methods. **loc** is used to call explicit index meanwhile implicit index is called using **iloc**.
+3. **DataFrame** is generally the most commonly used pandas object. It’s a 2-dimensional labeled data structure with rows and columns. It’s a collection of series with at least 1 series.
